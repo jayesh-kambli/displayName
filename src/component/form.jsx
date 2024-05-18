@@ -15,7 +15,7 @@ export default function Form() {
         style={{ margin: "2rem" }}
         onSubmit={(e) => {
           e.preventDefault();
-          setFull(first + " " + last);
+          setFull("Full Name: "+first + " " + last);
         }}
       >
         <h1>Full Name Display</h1>

@@ -22,6 +22,8 @@ export default function Form() {
         onSubmit={(e) => {
           e.preventDefault();
           setFull("Full Name: " + first + " " + last);
+          setFirst("");
+          setLast("");
         }}
       >
         <h1>Full Name Display</h1>

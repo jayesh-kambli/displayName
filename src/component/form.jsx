@@ -6,11 +6,11 @@ export default function Form() {
   const [first, setFirst] = useState("");
   const [last, setLast] = useState("");
   const [full, setFull] = useState("");
-  const [append, setAppend] = useState("");
+  // const [append, setAppend] = useState("");
 
-  useEffect(() => {
-    setAppend("<h1>"+full+"</h1>")
-  }, [full])
+  // useEffect(() => {
+  //   setAppend("<h1>" + full + "</h1>");
+  // }, [full]);
 
   function submit() {}
 
@@ -21,7 +21,7 @@ export default function Form() {
         style={{ margin: "2rem" }}
         onSubmit={(e) => {
           e.preventDefault();
-          setFull("Full Name: "+first + " " + last);
+          setFull("Full Name: " + first + " " + last);
         }}
       >
         <h1>Full Name Display</h1>
@@ -46,8 +46,8 @@ export default function Form() {
         />
         <br />
         <button type="submit">Submit</button>
+        <h1>{full}</h1>
       </form>
-      {append}
     </>
   );
 }

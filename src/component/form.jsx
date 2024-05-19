@@ -48,8 +48,8 @@ export default function Form() {
         />
         <br />
         <button type="submit">Submit</button>
-        <h1>{full}</h1>
       </form>
+      {fullName && <div>Full Name: {fullName}</div>}
     </>
   );
 }
